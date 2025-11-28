@@ -10,6 +10,7 @@ from model import EvacuationModel
 from agent import Person, Door, EscapedDot, Obstacle, Smoke, DeadDot, RedObstacle
 
 
+
 def get_person_portrayal(agent, model):
     """
     Define how Person agents are portrayed in the visualization.

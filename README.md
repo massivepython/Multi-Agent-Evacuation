@@ -1,6 +1,6 @@
 # Emergency Evacuation Multi-Agent Simulation
 
-A multi-agent system (MAS) that simulates emergency evacuation from a smoke-filled room. This model explores how **altruistic behavior** affects survival rates during emergencies.
+A multi-agent system that simulates emergency evacuation from a smoke-filled room. This model explores how **altruistic behavior** affects survival rates during emergencies.
 
 ## What is This?
 
