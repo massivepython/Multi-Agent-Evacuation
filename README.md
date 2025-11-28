@@ -197,6 +197,5 @@ Check `vis_result/` for generated plots after running analysis.
 - `numpy==1.24.3` - Numerical computing
 - `pandas==2.0.3` - Data analysis
 - `matplotlib==3.7.2` - Plotting and visualization
-- `Pillow==10.0.0` - Generating images for agent visualization
 
 
