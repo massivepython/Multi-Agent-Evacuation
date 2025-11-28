@@ -1,0 +1,37 @@
+(venv) C:\Users\Efe\Desktop\multi_agent\MAS-FIGA>python C:\Users\Efe\Desktop\multi_agent\MAS-FIGA\stats_analysis.py
+--- Loading Data from analysis_results.csv ---
+
+--- 1. Descriptive Statistics ---
+Total Samples: 67600
+Mean Deaths: 62.63
+Std Dev Deaths: 4.93
+
+Best Scenario (Fewest Deaths): Speed=100.0%, Altruism=96.0% -> Avg Deaths: 54.29
+Worst Scenario (Most Deaths):  Speed=0.0%, Altruism=88.0% -> Avg Deaths: 68.92
+
+--- 2. Correlation Analysis ---
+Correlation (Speed vs Deaths):    -0.5528 (P-value: 0.0000e+00)
+Correlation (Altruism vs Deaths): -0.2028 (P-value: 0.0000e+00)
+
+Interpretation:
+* Speed SIGNIFICANTLY reduces deaths (Strength: 0.55)
+* Altruism SIGNIFICANTLY reduces deaths (Strength: 0.20)
+
+--- 3. Two-Way ANOVA (Interaction Analysis) ---
+Testing model: Dead_Count ~ C(Speed) + C(Altruism) + C(Speed):C(Altruism)
+
+ANOVA Results (Impact Significance):
+Factor                         | F-Statistic  | P-Value      | Significance
+---------------------------------------------------------------------------
+C(speed_pct)                   | 1407.95      | 0.0000e+00   | HIGHLY SIG.
+C(altruism_pct)                | 194.08       | 0.0000e+00   | HIGHLY SIG.
+C(speed_pct):C(altruism_pct)   | 12.86        | 0.0000e+00   | HIGHLY SIG.
+Residual                       | nan          | nan          | Not Sig.
+
+--- 4. T-Test (Group Comparison) ---
+Comparing High Altruism (>70%) vs Low Altruism (<30%):
+High Mean: 61.52 | Low Mean: 63.91
+T-Statistic: -50.35 | P-Value: 0.0000e+00
+RESULT: High Altruism is STATISTICALLY BETTER by 2.38 lives on average.
+
+Analysis Complete.
