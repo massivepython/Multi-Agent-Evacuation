@@ -41,8 +41,8 @@ When you run the simulation, you'll see:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/MAS-FIGA.git
-   cd MAS-FIGA
+   git clone https://github.com/yourusername/Multi-Agent-Evacuation.git
+   cd Multi-Agent-Evacuation
    ```
 
 2. **Create a virtual environment (recommended):**
