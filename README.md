@@ -136,10 +136,10 @@ The room layout is defined in `map.txt`:
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
-| `altruistic_population_percent` | % of agents that are altruistic (binary: yes/no) | 50% |
-| `smoke_level` | Smoke intensity (0-100), affects damage and panic growth | 50 |
-| `helping_speed_percentage` | Pair speed: 0% = helped's speed, 100% = helper's speed | 80 |
-| `max_people_per_cell` | Maximum agents allowed per grid cell | 2 |
+| `Batch Size (if Batch Analysis)` | How many simulations the user wishes to run | 30 |
+| `Altruistic Population %` | % of agents that are altruistic (binary: yes/no) | 50% |
+| `Smoke Level` | Smoke intensity (0-100), affects damage and panic growth | 50 |
+| `Helping Speed Impact` | Percent of helper's speed when setting the speed of a pair (weighted average) | 80 |
 
 **Important:** The number of agents is determined by counting 'S' characters in the map, NOT by any slider. The current map has **218 spawn points** = 218 agents.
 
@@ -150,7 +150,7 @@ When the simulation starts, each agent is initialized with:
 | Property | How it's set | Range |
 |----------|--------------|---------------|
 | **Position** | Placed on an 'S' spawn point from map.txt | Always 218 agents to model the Cube241 classroom full |
-| **Altruism** |  Random based on slider % | Binary: 1.0 (altruistic) or 0.0 (not) |
+| **Altruism** |  Random based on slider % | Binary: 1 (altruistic) or 0 (not) |
 | **Health** | Everyone starts with 100 health | 0.0-100.0 |
 | **Speed** | Starts random between 0.7 and 1 | 0.0-1.0 |
 | **Panic** | Starts at 0, grows with smoke exposure | 0.0-1.0 |
